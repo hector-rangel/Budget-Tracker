@@ -13,7 +13,6 @@ request.onsuccess = function (event) {
     db = event.target.result;
 
     if (navigator.onLine) {
-        // may not need this 
         uploadBudget();
     }
 };
@@ -57,7 +56,7 @@ function uploadBudget() {
                 const budgetObjectStore = transaction.objectStore('new_budget');
                 budgetObjectStore.clear();
 
-                alert('All saved pizza has been sumbitd!');
+                alert('All saved transaction have been submitted!');
             })
             .catch(err => {
                 console.log(err);
