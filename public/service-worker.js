@@ -5,8 +5,9 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 // need to cache idb.js/icons too
 const FILES_TO_CACHE = [
     "./index.html",
-    "./public/js/idb.js",
-    "./public/css/styles.css",
+    "./js/index.js",
+    "./js/idb.js",
+    "./css/styles.css",
     "./public/icons/icon-72x72",
     "./public/icons/icon-96x96",
     "./public/icons/icon-128x128",
@@ -61,4 +62,4 @@ self.addEventListener('fetch', function (e) {
             }
         })
     )
-})
+});
