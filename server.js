@@ -16,10 +16,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(MONGODB_URI || 'mongodb://localhost/budget_tracker', {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true
+  useFindAndModify: false
 });
 
 // routes
